@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { Button } from '../components/Button';
 import { BuyList } from '../components/BuyList';
 import { buyList } from '../components/List';
+import Avatar from '../components/Avatar/Avatar.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -11,6 +12,7 @@ import { buyList } from '../components/List';
 		<Button client:load />
 		<h1><span class="text-gradient">COMPRAS DE LA SEMANA</span></h1>
 		<BuyList items={buyList}/>
+		<Avatar/>
 	</main>
 </Layout>
 

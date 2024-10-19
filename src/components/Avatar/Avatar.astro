@@ -1,0 +1,22 @@
+---
+const seed = Math.random().toString(36).substring(2, 15);
+const URL_RANDOM_AVATAR = `https://api.dicebear.com/9.x/bottts/svg?seed=${seed}`;
+---
+    
+<h2 class="text-gradient">Random image</h2>
+<div style="display: flex; justify-content: center;">
+    <img src={URL_RANDOM_AVATAR} alt="Avatar aleatorio" style="height: 350px; width: 400px;" />
+</div>
+<h2 class="text-gradient">DESCRIPCION</h2>
+<h2 style="text-align: center;">imagenes aleatorios</h2>
+
+<style>
+    .text-gradient {
+        text-align: center;
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+</style>
